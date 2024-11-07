@@ -1,0 +1,331 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: "Aptos", sans-serif;
+            margin: 0;
+            background-color: #FFFFFF;
+            color: #003366;
+        }
+
+        /* Dark Teal Section */
+        .intro-section {
+            background-color: #2E7382; /* light teal */
+            color: #92A6A8;
+            padding: 100px 20px;
+            text-align: center;
+            height: calc(100vh - 50px);
+        }
+
+        .intro-section h1 {
+            font-size: 1.4em;
+            color: white;
+            font-family: "Ivar Headline", sans-serif;
+            font-weight: normal;
+            margin-bottom: 60px;
+        }
+
+        /* Subheader Text */
+        .subheader {
+            font-size: 3em;
+            line-height: 0.8;
+            color: white;
+            font-family: Brandon_bld, sans-serif;
+            font-weight: normal;
+            margin: 5px 0;
+        }
+
+        .description {
+            font-family: 'Aptos', sans-serif;
+            font-size: 1em;
+            line-height: 0.5;
+            color: white;
+            max-width: calc(100% - 4cm);
+            margin: 20px auto 0;
+            line-height: 1.6;
+            text-align: center;
+        }
+         /* Button styling */
+         .details-button {
+            background-color: #7CB6C3;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            font-size: 1em;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            font-weight: bold;
+            /* Add shadow */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adjust as needed */
+
+}
+
+
+        /* Image below details button */
+        .details-image {
+            width: 600px;
+            height: 800px;
+            margin: 10px auto 0; /* Adds 10px space below button */
+            display: block;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        /* Steps Section */
+        .steps-section {
+            padding-top: 800px; /* Adds 800px space from the top */
+            padding-bottom: 40px;
+            font-family: Arial, sans-serif;
+            color: #003366;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Each Step Container */
+        .step-container {
+            width: calc(100%-40px); /* Full viewport width to remove side margins */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            background-color: #f2f2f2; /* Lighter silver */
+            border-radius: 15px; /* Removes rounded edges */
+            margin: 20px 20px;
+            position: relative;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            
+            
+        }
+
+        /* Step Title */
+        .step-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #073132;
+            margin-bottom: 10px;
+        }
+
+        /* Step Text */
+        .step-text {
+            flex: 1;
+            color: #003366;
+            text-align: center;
+            padding: 20px;
+            max-width: 500px;
+        }
+
+        .step-description {
+            font-size: 1em;
+            color: rgba(0, 0, 0, 0.7);
+            line-height: 1.6;
+        }
+
+        /* Step Image with Shadow */
+        .step-container img {
+            display: block;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        /* Individual Image Sizes */
+        .step1 img {
+            width: 800px;
+            height: 400px;
+            margin: 0 20px;
+        }
+
+        .step2 img {
+            width: 800px;
+            height: 400px;
+            margin: 0 20px;
+        }
+
+        .step3 img {
+            width: 650px;
+            height: 400px;
+            margin: 0 20px;
+        }
+
+        /* Vertical Divider Line */
+        .vertical-line {
+            height: 100px;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, black, transparent);
+            margin: 20px auto;
+        }
+
+        /* New Silver Square Section */
+        .final-section {
+            background-color: #f2f2f2;
+            padding: 60px 20px;
+            margin: 20px 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .final-section .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Left and Right Image Placeholders with Shadow */
+        .left-image, .right-image {
+            filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3)); /* Contour shadow */
+
+        }
+
+        .left-image {
+            width: 200px;
+            height: 380px;
+            margin: 20px 40px;
+        }
+
+        .right-image {
+            width: 200px;
+            height: 150px;
+            margin: 20px 40px;
+        }
+
+        /* Center Text Styling */
+        .final-section h2 {
+            font-family: Brandon_bld, sans-serif;
+            font-size: 2.5em;
+            line-height: 1;
+            margin: 0;
+            color: #377C8B;
+            text-align: top;
+            margin-bottom: 100px; /* Adds space below h2 */
+        }
+
+        /* Paragraph Styling */
+        .final-section p {
+            font-family: Montserrat, sans-serif;
+            font-size: 1em;
+            color: #073132;
+            margin-top: 40px; /* Adds space before p */
+            text-align: center;
+        }
+
+        .final-section .cta-text {
+            font-family: Montserrat, sans-serif;
+            font-size: 1 em;
+            font-weight: bold;
+            color: #073132;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Button Icons */
+        .button-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button-icons img {
+            width: 150px;
+            height: 50px;
+            filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3)); /* Drop shadow effect */
+            background: transparent; /* Ensure the image has no background */
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Dark Teal Intro Section -->
+    <div class="intro-section">
+        <h1>How To Use!</h1>
+        <div class="subheader">You Sync</div>
+        <div class="subheader">You Schedule</div>
+        <div class="subheader">You Navigate</div>
+        <p class="description">“Figure out how to navigate through the campus with ease,<br>
+            sync data and get effortless updates regarding your schedule,<br>
+            All with uORoute!”</p>
+        <button class="details-button" onclick="scrollToSteps()">See details ></button>
+        
+        <!-- Image Below Button -->
+        <img src="images/uOttawa-Map.jpg" alt="Details Section Image" class="details-image" />
+    </div>
+
+    <!-- Steps Section -->
+    <div class="steps-section" id="stepsSection">
+        
+        <!-- Step 1 -->
+        <div class="step-container step1">
+            <img src="images/download_uORoute.jpg" alt="Download App Image" />
+            <div class="step-text">
+                <div class="step-title">1. Download & Install the App</div>
+                <div class="step-description">
+                    Click the appropriate button below to download<br>
+                    the app on iOS or Android. Follow the on-screen<br>
+                    instructions to complete installation.
+                </div>
+            </div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <!-- Step 2 -->
+        <div class="step-container step2">
+            <div class="step-text">
+                <div class="step-title">2. Login with uZone credentials</div>
+                <div class="step-description">
+                    Use your uZone credentials to log in.<br>
+                    Make sure to authorize access to sync your<br>
+                    schedule and campus details with the app.
+                </div>
+            </div>
+            <img src="images/login_uZone.jpg" alt="uZone Login Image" />
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <!-- Step 3 -->
+        <div class="step-container step3">
+            <img src="images/Features_pic.jpg" alt="Features Image" />
+            <div class="step-text">
+                <div class="step-title">3. Enjoy the Features</div>
+                <div class="step-description">
+                    Explore the app’s features, such as easy campus navigation,<br>
+                    schedule syncing, and personalized notifications for<br>
+                    a smoother study experience!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Silver Square Section -->
+    <div class="final-section">
+        <div class="content-wrapper">
+            <!-- Left Image Placeholder with Shadow -->
+            <img src="images/Phone_Icon.png" alt="Left Image" class="left-image">
+
+            <!-- Center Text Section -->
+            <div style="text-align: center; flex-grow: 1;">
+                <h2>ONE CLICK<br>ALL IS YOURS</h2>
+                <p>Navigation with uORoute is easy - Just like a click to your uZone account.</p>
+                <p class="cta-text">SIGN IN OR DOWNLOAD NOW</p>
+                <div class="button-icons">
+                    <a href="YOUR_IOS_LINK"><img src="images/IOS_button.png" alt="IOS Button"></a>
+                    <a href="YOUR_ANDROID_LINK"><img src="images/a_button.png" alt="Android Button"></a>
+                </div>
+            </div>
+
+            <!-- Right Image Placeholder with Shadow -->
+            <img src="images/navi_icon.png" alt="Right Image" class="right-image">
+        </div>
+    </div>
+
+</body>
+</html>
