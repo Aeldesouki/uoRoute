@@ -1,0 +1,206 @@
+/* General styling */
+body {
+    font-family: "Aptos", sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: #003366;
+}
+
+/* Dark Teal Section */
+.intro-section {
+    background-color: #2E7382; /* light teal */
+    color: #92A6A8;
+    padding: 100px 20px;
+    text-align: center;
+    height: calc(100vh - 50px);
+}
+
+.intro-section h1 {
+    font-size: 1.4em;
+    color: white;
+    font-family: "Ivar Headline", sans-serif;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+/* Subheader Text */
+.subheader {
+    font-size: 3em;
+    line-height: 0.8;
+    color: white;
+    font-family: Brandon_bld, sans-serif;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.description {
+    font-family: 'Aptos', sans-serif;
+    font-size: 1em;
+    line-height: 0.5;
+    color: white;
+    max-width: calc(100% - 4cm);
+    margin: 20px auto 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Button styling */
+.details-button {
+    background-color: #7CB6C3;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adjust as needed */
+}
+
+/* Image below details button */
+.details-image {
+    width: 600px;
+    height: 800px;
+    margin: 10px auto 0;
+    display: block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+/* Steps Section */
+.steps-section {
+    padding-top: 800px;
+    padding-bottom: 40px;
+    font-family: Arial, sans-serif;
+    color: #003366;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each Step Container */
+.step-container {
+    width: calc(100%-40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin: 20px 20px;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Step Title */
+.step-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #073132;
+    margin-bottom: 10px;
+}
+
+/* Step Text */
+.step-text {
+    flex: 1;
+    color: #003366;
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.step-description {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.6;
+}
+
+/* Step Image with Shadow */
+.step-container img {
+    display: block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+/* Individual Image Sizes */
+.step1 img {
+    width: 800px;
+    height: 400px;
+    margin: 0 20px;
+}
+
+.step2 img {
+    width: 800px;
+    height: 400px;
+    margin: 0 20px;
+}
+
+.step3 img {
+    width: 650px;
+    height: 400px;
+    margin: 0 20px;
+}
+
+/* Vertical Divider Line */
+.vertical-line {
+    height: 100px;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, black, transparent);
+    margin: 20px auto;
+}
+
+/* New Silver Square Section */
+.final-section {
+    background-color: #f2f2f2;
+    padding: 60px 20px;
+    margin: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.final-section .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Left and Right Image Placeholders with Shadow */
+.left-image, .right-image {
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3)); /* Contour shadow */
+}
+
+.left-image {
+    width: 200px;
+    height: 380px;
+    margin: 20px 40px;
+}
+
+.right-image {
+    width: 200px;
+    height: 150px;
+    margin: 20px 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #00758F;
+}
+
+.cta-text {
+    font-size: 1.2em;
+    color: #D50032;
+}
+
+.button-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.button-icons img {
+    width: 100px;
+    height: 30px;
+}
