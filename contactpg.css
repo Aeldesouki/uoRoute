@@ -1,0 +1,135 @@
+.vl {
+  border-left: 1px solid grey;
+  height: 320px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 33.3em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color:rgb(0, 60, 60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  width: 68%;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+
+#contact-form {
+  flex: 1;
+  padding: 40px;
+}
+
+#contact-form h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.form-group span {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+input, textarea {
+  border: none;
+  background: transparent;
+  flex: 1;
+  outline: none;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(0, 60, 60); 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid black;  
+}
+
+button:hover {
+  background-color: rgb(0, 90, 90); 
+   transform: scale(1.5);
+}
+
+#contact-info {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+  margin-left: 5em;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.info-item span {
+  font-size: 2rem;
+  color: white;               
+  background-color: rgb(0, 84, 84);  
+  border-radius: 50%;         
+  width: 45px;
+  height: 45px;                
+  display: flex;               
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;    
+  border: 2px solid black;      
+}
+
+.info-item h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+.info-item a{
+  text-decoration: none;
+}
